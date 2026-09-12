@@ -43,4 +43,12 @@ shared_templates = "shared_templates"
 
 `[project.entry-points."airflow_blueprint.blueprints"]` advertises this package via [entry-points](https://packaging.python.org/en/latest/specifications/entry-points). The Blueprint loader scans the local path and every package discovered via `entry-points` for templates.
 
-The goal is to keep this repository as simple as possible. A GitHub Action  Therefore, a GitHub release was created manually. 
+A GitHub release was created manually to keep this repository simple:
+
+```bash
+git tag -a v[version] -m "Release v[version]"
+git push origin v[version]
+uv build
+```
+
+Create a release for `v[version]` in the GitHub UI and upload the build artifacts in `dist/`.
