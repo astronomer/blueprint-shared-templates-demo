@@ -1,5 +1,7 @@
 # Blueprint shared templates demo
 
+This repository contains Blueprint templates distributed via a Python package. Airflow projects can install and use the Blueprint templates from this package. See https://github.com/astronomer/blueprint-shared-templates-usage-demo for an example.
+
 ## Install shared templates
 
 Install the shared-templates package in your Airflow project. Add to your `requirements.txt`:
